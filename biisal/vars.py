@@ -6,9 +6,9 @@ from dotenv import load_dotenv
 
 
 load_dotenv()
-bot_name = "Bɪɪsᴀʟ Fɪʟᴇ2Lɪɴᴋ Bᴏᴛ"
-bisal_channel = "https://telegram.me/bisal_files"
-bisal_grp = "https://t.me/+PA8OPL2Zglk3MDM1"
+bot_name = "Fɪʟᴇ2Lɪɴᴋ Bᴏᴛ"
+bisal_channel = "https://telegram.me/PBX1_BOTS"
+bisal_grp = "https://t.me/PBX1_SUPPORT_CHAT"
 
 class Var(object):
     MULTI_CLIENT = False
@@ -36,9 +36,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', 'BIND_ADRESS:PORT')) if not ON_HEROKU or getenv('FQDN', '') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',True))
     if HAS_SSL:
-        URL = "https://{}/".format(FQDN)
+        URL = "https://newf2l-3087871c4c8b.herokuapp.com/".format(FQDN)
     else:
-        URL = "http://{}/".format(FQDN)
+        URL = "http://newf2l-3087871c4c8b.herokuapp.com/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', ''))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'bisal_files')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
