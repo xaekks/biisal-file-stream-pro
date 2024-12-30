@@ -270,13 +270,7 @@ async def cb_handler(client, query):
             )
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
-                text="
-   🔰 ɢʀᴏᴜᴘs & ᴄʜᴀɴɴᴇʟs ɪɴғᴏ 🔰
-▫ ᴄᴏᴍᴘʟᴇᴛᴇ ᴍᴏᴠɪᴇs ʀᴇǫᴜᴇsᴛɪɴɢ ɢʀᴏᴜᴘ.
-▫ ᴀʟʟ ʟᴀɴɢᴜᴀɢᴇ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs.
-▫ ғᴀsᴛᴇsᴛ ʙᴏᴛs ᴀʀᴇ ᴀᴅᴅᴇᴅ.
-▫ ғʀᴇᴇ & ᴇᴀsʏ ᴛᴏ ᴜsᴇ.
-▫ 𝟸𝟺x𝟽 sᴇʀᴠɪᴄᴇs ᴀᴠᴀɪʟᴀʙʟᴇ.",
+                text="🔰 ɢʀᴏᴜᴘs & ᴄʜᴀɴɴᴇʟs ɪɴғᴏ ▫ ᴄᴏᴍᴘʟᴇᴛᴇ ᴍᴏᴠɪᴇs ʀᴇǫᴜᴇsᴛɪɴɢ ɢʀᴏᴜᴘ.▫ ᴀʟʟ ʟᴀɴɢᴜᴀɢᴇ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs.▫ ғᴀsᴛᴇsᴛ ʙᴏᴛs ᴀʀᴇ ᴀᴅᴅᴇᴅ.▫ ғʀᴇᴇ & ᴇᴀsʏ ᴛᴏ ᴜsᴇ.▫ 𝟸𝟺x𝟽 sᴇʀᴠɪᴄᴇs ᴀᴠᴀɪʟᴀʙʟᴇ.",
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
