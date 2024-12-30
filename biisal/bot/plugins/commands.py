@@ -68,16 +68,15 @@ async def start(b, m):
     caption= SRT_TXT.format(m.from_user.mention(style="md")),
     reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("🔺 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🔺", url=bisal_channel)],
+            [InlineKeyboardButton("📌 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📌", url=bisal_channel)],
             [
-                 InlineKeyboardButton("ᴀʙᴏᴜᴛ ✳️", callback_data="about"),
-                 InlineKeyboardButton("ʜᴇʟᴘ 😅", callback_data="help")
+                 InlineKeyboardButton("ᴀʙᴏᴜᴛ 📰", callback_data="about"),
+                 InlineKeyboardButton("ʜᴇʟᴘ 💡", callback_data="help")
             ],
             [InlineKeyboardButton("ᴏᴜʀ ɢʀᴏᴜᴘ 📍", url=bisal_grp)],
 
             [
-                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", url=f"https://www.google.com"),
-                 InlineKeyboardButton("ᴅᴇᴠ 😊", callback_data="aboutDev")
+                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", url=f"https://www.google.com")
             ]
         ]
     )
@@ -108,7 +107,7 @@ async def help_cd(b, m):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Jᴏɪɴ ɴᴏᴡ 🚩", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("📌 Jᴏɪɴ ɴᴏᴡ 📌", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -118,22 +117,22 @@ async def help_cd(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<b>sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ᴘʟᴇᴀsᴇ <a href='https://t.me/biisal_bot'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ sᴜᴘᴘᴏʀᴛ</a></b>",
+                text="<b>sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ᴘʟᴇᴀsᴇ <a href='https://t.me/kissuhelp'>ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ sᴜᴘᴘᴏʀᴛ</a></b>",
                 
                 disable_web_page_preview=True)
             return
     await StreamBot.send_photo(
     chat_id=m.chat.id,
     photo="https://telegra.ph/file/d813fe75a3ac675ef34b7.jpg",
-    caption=f"<b>ᴡᴇ ᴅᴏɴᴛ ɴᴇᴇᴅ ᴍᴀɴʏ <a href='https://t.me/bisal_files'>ᴄᴏᴍᴍᴀɴᴅs</a> ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ 🤩.\n\nᴊᴜsᴛ sᴇɴᴅ ᴍᴇ <a href='https://t.me/bisal_files'>ᴠɪᴅᴇᴏ ғɪʟᴇs</a> ᴀɴᴅ ɪ ᴡɪʟʟ ɢɪᴠᴇ ʏᴏᴜ <a href='https://t.me/bisal_files'>ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ & sᴛʀᴇᴀᴍᴀʙʟᴇ</a> ʟɪɴᴋ.\n\nᴏʀ ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ <a href='https://t.me/bisal_files'>ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ</a>..ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ᴀɴᴅ sᴇᴇ ᴍʏ ᴍᴀɢɪᴄ 😎</b>",
+    caption=f"<b>ᴡᴇ ᴅᴏɴᴛ ɴᴇᴇᴅ ᴍᴀɴʏ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ 🤩.\n\nᴊᴜsᴛ sᴇɴᴅ ᴍᴇ ᴠɪᴅᴇᴏ ғɪʟᴇs ᴀɴᴅ ɪ ᴡɪʟʟ ɢɪᴠᴇ ʏᴏᴜ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ & sᴛʀᴇᴀᴍᴀʙʟᴇ ʟɪɴᴋ.\n\nᴏʀ ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ..ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ᴀɴᴅ sᴇᴇ ᴍʏ ᴍᴀɢɪᴄ 😎</b>",
     reply_markup=InlineKeyboardMarkup(
         [
             [   
-                InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🤡", url=bisal_channel)
+                InlineKeyboardButton("📌 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📌", url=bisal_channel)
             ],
             [
                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", url=f"https://www.google.com"),
-                InlineKeyboardButton("ᴏᴜʀ ɢʀᴏᴜᴘ 🚩", url=bisal_grp),
+                InlineKeyboardButton("ᴏᴜʀ ɢʀᴏᴜᴘ ", url=bisal_grp),
 
             ],
             [
@@ -207,16 +206,15 @@ async def cb_handler(client, query):
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
                 [
-            [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🤡", url=bisal_channel)],
+            [InlineKeyboardButton("📌 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 📌", url=bisal_channel)],
             [
-                 InlineKeyboardButton("ᴀʙᴏᴜᴛ ✳️", callback_data="about"),
-                 InlineKeyboardButton("ʜᴇʟᴘ 🔺", callback_data="help")
+                 InlineKeyboardButton("ᴀʙᴏᴜᴛ 📰", callback_data="about"),
+                 InlineKeyboardButton("ʜᴇʟᴘ 💡", callback_data="help")
             ],
             [InlineKeyboardButton("ᴏᴜʀ ɢʀᴏᴜᴘ 📍", url=bisal_grp)],
 
             [
-                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", url=f"https://telegra.ph/Disclaimer-11-07-37"),
-                 InlineKeyboardButton("ᴅᴇᴠ 😊", callback_data="aboutDev")
+                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", url=f"https://telegra.ph/Disclaimer-11-07-37")
             ]
         ]
             )
