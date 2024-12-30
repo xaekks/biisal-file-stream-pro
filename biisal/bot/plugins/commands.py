@@ -211,10 +211,10 @@ async def cb_handler(client, query):
                  InlineKeyboardButton("ᴀʙᴏᴜᴛ 📰", callback_data="about"),
                  InlineKeyboardButton("ʜᴇʟᴘ 💡", callback_data="help")
             ],
-            [InlineKeyboardButton("↼ Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ ⇀", url="t.me/ur_movie_group)],
+            [InlineKeyboardButton("↼ Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ ⇀", url="t.me/ur_movie_group")],
 
             [
-                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", callback_data=f"chnl_info")
+                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", callback_data="chnl_info")
             ]
         ]
             )
