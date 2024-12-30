@@ -240,7 +240,7 @@ async def cb_handler(client, query):
                      InlineKeyboardButton("ᴄʟᴏsᴇ ‼️", callback_data="close_data")
                   ]]            )
         )
-        elif query.data == "chnl_info":
+        elif data == "chnl_info":
             btn = [[
                     InlineKeyboardButton("↼ Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ ⇀", url="t.me/ur_movie_group")
                 ],[
@@ -274,7 +274,7 @@ async def cb_handler(client, query):
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
-    elif query.data == "dicl_btn":
+    elif data == "dicl_btn":
         buttons = [[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='about')
         ]]
