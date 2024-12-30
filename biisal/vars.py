@@ -26,6 +26,7 @@ class Var(object):
     OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "6670354006").split()]
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
+    PICS = (environ.get('PICS', 'https://telegra.ph/file/ded6640caffcd72b77f64.jpg https://telegra.ph/file/54b0ae662175ac6af6075.jpg https://telegra.ph/file/857a050c16577c3f140e0.jpg https://telegra.ph/file/a53e31d5f1617573cfaf6.jpg https://telegra.ph/file/252c23180fd4ec651d05c.jpg https://telegra.ph/file/43de56c43d2bfde9b436b.jpg https://telegra.ph/file/962f894d97316f97dfb97.jpg')).split() #SAMPLE PIC
     OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'xaekks'))
     if 'DYNO' in environ:
         ON_HEROKU = True
