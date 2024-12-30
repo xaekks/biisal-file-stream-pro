@@ -241,7 +241,10 @@ async def cb_handler(client, query):
                   ]]            )
         )
         elif data == "chnl_info":
-            btn = [[
+            await query.message.edit_caption(
+        caption=f"<b>ᴡᴇ ᴅᴏɴᴛ ɴᴇᴇᴅ ᴍᴀɴʏ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ 🤩.\n\nᴊᴜsᴛ sᴇɴᴅ ᴍᴇ ᴠɪᴅᴇᴏ ғɪʟᴇs ᴀɴᴅ ɪ ᴡɪʟʟ ɢɪᴠᴇ ʏᴏᴜ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ & sᴛʀᴇᴀᴍᴀʙʟᴇ ʟɪɴᴋ.\n\nᴏʀ ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ..ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ᴀɴᴅ sᴇᴇ ᴍʏ ᴍᴀɢɪᴄ 😎</b>",
+            reply_markup=InlineKeyboardMarkup(
+[[
                     InlineKeyboardButton("↼ Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ ⇀", url="t.me/ur_movie_group")
                 ],[
                     InlineKeyboardButton("↼ ʙᴏᴛ ᴄʜᴀɴɴᴇʟ ⇀", url="t.me/kissubots")
@@ -252,44 +255,18 @@ async def cb_handler(client, query):
                     InlineKeyboardButton('Cʟᴏsᴇ ⊝', callback_data='close_data')
                 ],[
                     InlineKeyboardButton('❗❗ Dɪsᴄʟᴀɪᴍᴇʀ ❗❗', callback_data='dicl_btn')
-                ]]
-            await client.edit_message_media(
-                query.message.chat.id, 
-                query.message.id, 
-                InputMediaPhoto(random.choice(PICS)) reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text="▣☐☐"
+                ]]            )
             )
-            await asyncio.sleep(0.1)
-            await query.message.edit_text(
-                text="▣▣☐"
-            )
-            await asyncio.sleep(0.2)
-            await query.message.edit_text(
-                text="▣▣▣"
-            )
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text="🔰 ɢʀᴏᴜᴘs & ᴄʜᴀɴɴᴇʟs ɪɴғᴏ ▫ ᴄᴏᴍᴘʟᴇᴛᴇ ᴍᴏᴠɪᴇs ʀᴇǫᴜᴇsᴛɪɴɢ ɢʀᴏᴜᴘ.▫ ᴀʟʟ ʟᴀɴɢᴜᴀɢᴇ ᴍᴏᴠɪᴇs & sᴇʀɪᴇs.▫ ғᴀsᴛᴇsᴛ ʙᴏᴛs ᴀʀᴇ ᴀᴅᴅᴇᴅ.▫ ғʀᴇᴇ & ᴇᴀsʏ ᴛᴏ ᴜsᴇ.▫ 𝟸𝟺x𝟽 sᴇʀᴠɪᴄᴇs ᴀᴠᴀɪʟᴀʙʟᴇ.",
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
-            )
+
     elif data == "dicl_btn":
-        buttons = [[
+        await query.message.edit_caption(
+        caption=f"<b>ᴡᴇ ᴅᴏɴᴛ ɴᴇᴇᴅ ᴍᴀɴʏ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ 🤩.\n\nᴊᴜsᴛ sᴇɴᴅ ᴍᴇ ᴠɪᴅᴇᴏ ғɪʟᴇs ᴀɴᴅ ɪ ᴡɪʟʟ ɢɪᴠᴇ ʏᴏᴜ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ & sᴛʀᴇᴀᴍᴀʙʟᴇ ʟɪɴᴋ.\n\nᴏʀ ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ..ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ᴀɴᴅ sᴇᴇ ᴍʏ ᴍᴀɢɪᴄ 😎</b>",
+            reply_markup=InlineKeyboardMarkup(
+[[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
+        ]]            )
         )
-        await query.message.edit_text(
-            text="Welcome To Our Online Streaming Platform! Our Website Allows Users To Generate Streamable Links For Various Files Using Telegram Bots. Please Note That We Are Not Responsible For The Content Shared Or Streamed Through Our Service. Users Are Encouraged To Respect Copyright Laws And Adhere To Our Community Guidelines. Enjoy Easy, Hassle-Free File Streaming.",
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-            )
+        
     elif data == "aboutDev":
         # please don't steal credit
         await query.message.edit_caption(
