@@ -76,7 +76,7 @@ async def start(b, m):
             [InlineKeyboardButton("↼ Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ ⇀", url="t.me/ur_movie_group")],
 
             [
-                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", url=f"https://www.google.com")
+                 InlineKeyboardButton("⚠️ ᴅɪsᴄʟᴀɪᴍᴇʀ ⚠️", callback_data="chnl_info")
             ]
         ]
     )
@@ -132,7 +132,7 @@ async def help_cd(b, m):
             ],
             [
                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", callback_data="chnl_info"),
-                InlineKeyboardButton("ᴏᴜʀ ɢʀᴏᴜᴘ ", url=bisal_grp),
+                InlineKeyboardButton("↼ Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ ⇀", url="t.me/ur_movie_group"),
 
             ],
             [
@@ -214,7 +214,7 @@ async def cb_handler(client, query):
             [InlineKeyboardButton("↼ Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ ⇀", url="t.me/ur_movie_group")],
 
             [
-                 InlineKeyboardButton("ᴅɪsᴄʟᴀɪᴍᴇʀ 🔻", callback_data="chnl_info")
+                 InlineKeyboardButton("⚠️ ᴅɪsᴄʟᴀɪᴍᴇʀ ⚠️", callback_data="chnl_info")
             ]
         ]
             )
